@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bgColor:#1C1C1C;
+    --accentColor: #f1f0e9;
+    --font: 'Karla', sans-serif;
+}
+body{
+    position: relative;
+    background-color: var(--bgColor);
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+header img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: #bbb;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--font);
+}
+
+.link-tree{
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a{
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .5s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+@media (min-width: 1024px) {
+    .link-tree {
+        width: 40vw;
+    }
+}
